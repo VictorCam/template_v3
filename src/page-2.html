@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page 2</title>
+  <script src="/surreal.js"></script>
+</head>
+
+<body>
+  <section>
+    <div class="test"></div>
+    <a href="./index.html">Go to home</a>
+    <h1>Welcome to page 2
+      <script>
+        (async (e = me()) => {
+          me(e).styles({ "transition": "background 1s" })
+          await sleep(1000)
+          me(e).styles({ "background": "red" })
+          await sleep(1000)
+          me(e).styles({ "background": "green" })
+          await sleep(1000)
+          me(e).styles({ "background": "blue" })
+          await sleep(1000)
+          me(e).styles({ "background": "none" })
+          await sleep(1000)
+          me(e).remove()
+        })()
+      </script>
+    </h1>
+  </section>
+</body>
+
+</html>
